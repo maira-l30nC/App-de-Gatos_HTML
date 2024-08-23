@@ -1,0 +1,74 @@
+<!DOCTYPE html>  <!--"Esta cadena especial es conocida como una declaración y se asegura de que el navegador intente cumplir las especificaciones de la industria."-->
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>App Fotos de Gatos</title>
+  </head>
+  <body>
+    <main>
+      <h1>App Fotos de Gatos</h1>
+      <section>
+        <h2>Fotos de gatos</h2>
+        <!-- TODO: Add link to cat photos -->
+        <p>Vea más <a target="_blank" href="https://freecatphotoapp.com">fotos de gatos</a> en nuestra galería.</p>
+        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+      </section>
+
+      <section>
+        <h2>Listas de gatos</h2>
+        <h3>Cosas que les encantan a los gatos:</h3>
+        <ul>
+          <li>pellizco de gato</li>
+          <li>punteros laser</li>
+          <li>lasaña</li>
+        </ul>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A los gatos les encanta lasaña..">
+          <figcaption>Cats <em>love</em> lasagna.</figcaption>  
+        </figure>
+        <h3>Las 3 cosas principales que odian los gatos:</h3>
+        <ol>
+          <li>tratamiento contra pulgas</li>
+          <li>trueno</li>
+          <li>otros gatos</li>
+        </ol>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Los gatos odian a otros gatos.">
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption> 
+                  </figure>
+      </section>
+      <!--Para hacer que un checkbox o un radio button este seleccionado por defecto, necesitas añadir el atributo checked.
+         No hay necesidad de agregarle un valor al atributo checked. Simplemente necesitas añadir la palabra checked al 
+         elemento input, asegurándote de que hay espacios entre ella y los otros atributos.Haz que el primer radio 
+         button y el primer checkbox estén seleccionados por defecto.-->
+      <section>
+        <h2>Forma de gato </h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo"> 
+          <fieldset>
+            <legend>¿Tu gato es un gato de interior o de exterior?</legend> 
+            <label><input id="interior" type="radio" name="interior-exterior" value="interior"> Interior</label>
+           <label><input id="exterior" type="radio" name="interior-exterior" value="exterior">Exterior</label> 
+          </fieldset>
+          <fieldset>
+            <legend>¿Cuál es la personalidad de tu gato?</legend>
+            <input id="cariñoso" name="personality" type="checkbox"> <label for="cariñoso" value="cariñoso"> Cariñoso </label>
+            <input id="perezoso" type="checkbox" name="personality"> <label for="perezoso" value="perezoso">Perezoso </label>
+            <input id="energetico" type="checkbox" name="personality"> <label for="energetico" value="energetico">Energético</label>
+          </fieldset>
+          <input type="text" name="catphotourl" placeholder="foto de gato URL" required>
+          <button type="submit">Entregar</button>
+        </form>
+
+         <form></form>
+      </section>
+
+    </main>
+    
+    <footer>
+      <p> Sin derechos de auto- <a href="https://www.freecodecamp.org"> freeCodeCamp.org </a> 
+      </p>
+
+    </footer>
+  </body>
+</html>
